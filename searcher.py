@@ -50,21 +50,21 @@ if os.path.exists(directory + "/" + case) == True :
 os.mkdir(os.path.join(directory, case))
 
 # Ask for query and get back number of results
-query = input("¿What do you want search? -> ")
+query = input("What do you want search? -> ")
 number_results(query)
 
 # search(stop)
-total = int(input("¿How many results do you want get? -> "))
+total = int(input("How many results do you want get? -> "))
 
 # search(num)
-split = int(input("¿How many results do you want get in each request? (Default: 10) -> ") or 10)
+split = int(input("How many results do you want get in each request? (Default: 10) -> ") or 10)
 
 # search(pause)
-delay = int(input("¿How many delay (in senconds) do you want set up for each request? (Default: 2) -> ") or 2)
+delay = int(input("How many delay (in senconds) do you want set up for each request? (Default: 2) -> ") or 2)
 
 # search(safe)
 while True:
-    safe = str(input("¿Want activate the safe mode? [on/off] (Default: off) -> ") or "off")
+    safe = str(input("Want activate the safe mode? [on/off] (Default: off) -> ") or "off")
 
     if safe == "on" or safe == "off":
         break
@@ -74,7 +74,7 @@ while True:
 
 # search(verify_ssl)
 while True:
-    ssl = input("¿Do you want verify the SSL certificate? (Default: Yes) -> ") or "Yes"
+    ssl = input("Do you want verify the SSL certificate? (Default: Yes) -> ") or "Yes"
 
     if ssl.capitalize() == "Yes":
         ssl = bool(True)
@@ -87,14 +87,14 @@ while True:
         continue
 
 # search(user_aggent)
-user_aggent = str(input("¿Which User Agent do you want use (Default: None) -> ") or "None")
+user_aggent = str(input("Which User Agent do you want use? (Default: None) -> ") or "None")
 
 # serach(tld)
-tld = str(input("¿Which Google TLD do you want use? (Default: com) -> ") or "com")
+tld = str(input("Which Google TLD do you want use? (Default: com) -> ") or "com")
 
 # Ask if the user want download the files
 while True:
-    download = input("¿Do you want download the content? It's recommended if you want search files (Default: No) -> ") or "No"
+    download = input("Do you want download the content? It is recommended if you want search files (Default: No) -> ") or "No"
 
     if download.capitalize() == "Yes":
         download = bool(True)
